@@ -32,9 +32,8 @@
     <!-- header-section start -->
     <header class="header-section">
         <div class="overlay">
-            <div class="container">
-                <include src="navbar.html"></include>
-            </div>
+            <div class="container" id="navbar-container">
+                </div>
         </div>
     </header>
     <!-- header-section end -->
@@ -106,9 +105,16 @@
     <!-- Create Account In end -->
 
     <!-- Footer Area Start -->
-    <include src="footer.html"></include>
+    <div id="footer-container"></div>
     <!-- Footer Area End -->
-
+    <script src="assets/js/components.js"></script>
+    <script>
+        // Include the navigation bar
+        includeHTML(document.getElementById("navbar-container"), "components/navbar.html");
+        
+        // Include the footer
+        includeHTML(document.getElementById("footer-container"), "components/footer.html");
+    </script>
     <!--==================================================================-->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery-ui.js"></script>

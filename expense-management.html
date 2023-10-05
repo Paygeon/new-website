@@ -34,7 +34,7 @@
         <div class="overlay">
             <div class="container">
                 <div class="row d-flex header-area">
-                    <include src="navbar.html"></include>
+                    <div class="container" id="navbar-container">
             </div>
         </div>
     </header>
@@ -327,9 +327,16 @@
     <!-- Call To Action end -->
 
     <!-- Footer Area Start -->
-    <include src="footer.html"></include>
+    <div id="footer-container"></div>
     <!-- Footer Area End -->
-
+    <script src="assets/js/components.js"></script>
+    <script>
+        // Include the navigation bar
+        includeHTML(document.getElementById("navbar-container"), "components/navbar.html");
+        
+        // Include the footer
+        includeHTML(document.getElementById("footer-container"), "components/footer.html");
+    </script>
     <!--==================================================================-->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery-ui.js"></script>
