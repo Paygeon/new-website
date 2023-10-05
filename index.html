@@ -372,7 +372,14 @@
     <!-- Footer Area Start -->
     <include src="components/footer.html"></include>
     <!-- Footer Area End -->
-
+    <script src="assets/js/components.js"></script>
+    <script>
+        // Include the navigation bar
+        includeHTML(document.getElementById("navbar-container"), "components/navbar.html");
+        
+        // Include the footer
+        includeHTML(document.getElementById("footer-container"), "components/footer.html");
+    </script>
     <!--==================================================================-->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery-ui.js"></script>
