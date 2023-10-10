@@ -3688,7 +3688,7 @@ label {
 } 
 
 .section-w5h { 
-    background-color: #050251; 
+    background-color: #0c266c; 
     position: relative;
 } 
 
@@ -3817,7 +3817,7 @@ ul {
 } 
 
 a { 
-    color: #0d6efd; 
+    color: #fff; 
     text-decoration: underline;
 } 
 
@@ -3835,7 +3835,7 @@ a {
 } 
 
 a:hover { 
-    color: #0a58ca;
+    color: #00FE83;
 } 
 
 a,a:hover { 
@@ -3878,7 +3878,7 @@ img {
 } 
 
 .footer-son li:hover { 
-    color: var(--primary-color);
+    color: #00FE83;
 } 
 
 span { 
@@ -3886,7 +3886,7 @@ span {
 } 
 
 .copyright-s16 p span  { 
-    color: var(--primary-color); 
+    color: #FFF; 
     font-weight: 500;
 } 
 
