@@ -3817,7 +3817,7 @@ ul {
 } 
 
 a { 
-    color: #fff; 
+    color: #0d6efd; 
     text-decoration: underline;
 } 
 
@@ -3835,7 +3835,7 @@ a {
 } 
 
 a:hover { 
-    color: #00FE83;
+    color: #0a58ca;
 } 
 
 a,a:hover { 
@@ -3878,15 +3878,16 @@ img {
 } 
 
 .footer-son li:hover { 
-    color: #00FE83;
+    color: var(--primary-color);
 } 
 
 span { 
     display: inline-block;
+    color: #fff !important;
 } 
 
 .copyright-s16 p span  { 
-    color: #FFF; 
+    color: #fff !important;
     font-weight: 500;
 } 
 
