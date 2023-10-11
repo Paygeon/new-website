@@ -2,9 +2,9 @@
   "name": "paygeon-website",
   "version": "1.0.0",
   "description": "Paygeon landing page and features",
-  "main": "index.html",
+  "main": "index.js",
   "scripts": {
-    "start": "nodemon bin/index --exec babel-node",
+    "start": "index.js --exec babel-node",
     "build": "babel bin -d dist",
     "serve": "node dist/index.js",
     "lint": "eslint config app/** --ext .js",
@@ -20,6 +20,7 @@
     "body-parser": "^1.20.2",
     "ejs": "^3.1.9",
     "express": "~4.18.2",
+    "index": "^0.4.0",
     "morgan": "^1.10.0"
   },
   "devDependencies": {
