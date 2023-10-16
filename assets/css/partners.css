@@ -3675,3 +3675,7 @@ tbody td  {
    left: 1426px;  
     top: 15205.6px;  
 }  
+body {
+    overflow-x: hidden;
+  }
+  
