@@ -684,14 +684,7 @@ label {
     margin-right: 15px;
 }
 
-.header-section .navbar .navbar-collapse .navbar-nav .nav-item .nav-link.dropdown-toggle::after {
-    position: absolute;
-    content: "\0043";
-    border: none;
-    font-family: "arafat font";
-    font-weight: 400;
-    font-size: 14px;
-}
+
 
 .header-section .navbar .navbar-collapse .navbar-nav .nav-item .dropdown-menu {
     background-color: var(--body-color);
@@ -849,14 +842,7 @@ label {
     align-items: center;
 }
 
-.banner-section .overlay .banner-content .send-money .currency-area .right-side .nice-select:after {
-    border-bottom: 2px solid #0c266c;
-    border-right: 2px solid #0c266c;
-    height: 13px;
-    right: 18px;
-    top: initial;
-    width: 13px;
-}
+
 
 .banner-section .overlay .banner-content .send-money .currency-area .right-side .nice-select .current {
     position: relative;
@@ -916,15 +902,7 @@ label {
     position: relative;
 }
 
-.banner-section .overlay .banner-content .send-money .calculation .single-area .left-area i::after {
-    position: absolute;
-    content: "";
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: #edecfb;
-    z-index: -1;
-}
+
 
 .banner-section.payment .overlay {
     background-image: url(../images/payment-banner-bg.png);
@@ -1533,24 +1511,7 @@ label {
     margin-bottom: 25px;
 }
 
-.how-it-works .single-item::after {
-    content: "";
-    position: absolute;
-    background-repeat: no-repeat;
-    width: 104px;
-    height: 15px;
-    right: calc(-17% - 10px);
-    top: calc(35% - 20px);
-}
 
-.how-it-works .single-item.first::after {
-    background-image: url(../images/icon/how-works-arrow-1.png);
-}
-
-.how-it-works .single-item.second::after {
-    background-image: url(../images/icon/how-works-arrow-2.png);
-    top: calc(30% - 20px);
-}
 
 .how-it-works .single-item h5 {
     margin: 21px 0 24px;
