@@ -2,14 +2,11 @@
   "name": "paygeon-website",
   "version": "1.0.0",
   "description": "Paygeon landing page and features",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "start": "index.js --exec babel-node",
-    "build": "babel bin -d dist",
-    "serve": "node dist/index.js",
-    "lint": "eslint config app/** --ext .js",
-    "fix": "eslint --fix config app/** --ext .js",
-    "test": "mocha --compilers js:babel-register -r test/setup.js test --recursive"
+    "install-http-server": "npm install -g http-server",
+    "start-http-server": "http-server",
+    "start": "npm run install-http-server && npm run start-http-server"
   },
   "dependencies": {
     "@babel/eslint-parser": "^7.22.15",
