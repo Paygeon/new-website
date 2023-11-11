@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta
+  name="description"
+  content="SwaggerUI"
+/>
+<title>SwaggerUI</title>
+<link rel="stylesheet" href="https://unpkg.com/swagger-ui-dist@4.5.0/swagger-ui.css" />
+</head>
+<body>
+    <header class="header-section">
+        <div class="overlay">
+            <div class="container" id="navbar-container">
+         </div>
+        </div>
+    </header>
+    <div id="swagger-ui"></div>
+    <script src="https://unpkg.com/swagger-ui-dist@4.5.0/swagger-ui-bundle.js" crossorigin></script>
+    <script>
+      window.onload = () => {
+        window.ui = SwaggerUIBundle({
+          url: 'https://paygeon.github.io/paygeon-api/paygeon-api.json',
+          dom_id: '#swagger-ui',
+        });
+      };
+    </script>
+    <!-- Footer Area Start -->
+    <div id="footer-container"></div>
+    <!-- Footer Area End -->
+    <script src="assets/js/components.js"></script>
+    <script>
+        // Include the navigation bar
+        includeHTML(document.getElementById("navbar-container"), "components/navbar.html");
+        
+        // Include the footer
+        includeHTML(document.getElementById("footer-container"), "components/footer.html");
+    </script>
+    </body>
+    </html>
