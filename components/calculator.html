@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by Vashon Gonzales</title>
+  <link rel='stylesheet' href='https://www.hydrogen.tech/css/bootstrap/bootstrap.css'>
+<link rel='stylesheet' href='https://www.hydrogen.tech/css/styles.css'>
+<link rel='stylesheet' href='https://www.hydrogen.tech/css/card.css'>
+<link rel='stylesheet' href='https://www.hydrogen.tech/js/vendor/jquery-minicolors/jquery.minicolors.css'>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container money-revenue" style="padding-top:50px">
+  <div class="row">
+    <div class="col-12 container-small mb-5">
+      <h2 class="text-center container-small">Revenue Potential</h2>
+      <p class="slogan text-center container-small">Every time your users swipe their card, you will receive <strong><span style="color:blue;cursor:pointer" data-toggle="tooltip" data-html="true" data-placement="top" title="" data-original-title="<p>Earn the following rates based on total spending across your program.</p>$0-$99,999k/mo: 0.50%<br/>$100,000-$999,999/mo: 0.75%<br/>$1,000,000/mo or more: 1.0%">up to 1%</span></strong> on all transactions!<br> Use the interactive model below to estimate your revenue potential.</p>
+
+      <input type="hidden" id="interchange" value=".01">
+    </div>
+    <div class="col-12 d-flex flex-wrap align-items-center justify-content-md-center">
+      <div class="col-12 mb-5 mb-md-0 col-lg-5 d-flex flex-column">
+        <form id="cardRevenueForm" data-hs-cf-bound="true">
+          <div class="form-group">
+            <label for="totalUsersRange">Total Users</label>
+            <p id="totalUsersRangeSum" class="sum">
+              <span class="value">100</span>
+            </p>
+            <div class="range" style="background: linear-gradient(to right, rgb(9, 95, 217) 15.0403px, rgb(240, 245, 250) 15.0403px);">
+              <input type="range" min="10" max="1000000" step="100" id="totalUsersRange" value="100">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="cardSwipesRange">Average Annual Transactions per User</label>
+            <p class="sum">
+              <span class="value">100</span>
+            </p>
+            <div class="range" style="background: linear-gradient(to right, rgb(9, 95, 217) 54.9369px, rgb(240, 245, 250) 54.9369px);">
+              <input type="range" min="1" max="1000" step="1" id="cardSwipesRange" value="100">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="averageTransactionRange">Average Transaction Size</label>
+            <p class="sum">
+              <span>$</span>
+              <span class="value">20</span>
+            </p>
+            <div class="range" style="background: linear-gradient(to right, rgb(9, 95, 217) 51.6364px, rgb(240, 245, 250) 51.6364px);">
+              <input type="range" min="10" max="1000" step="1" id="averageTransactionRange" value="100">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-12 col-lg-5 d-flex flex-column justify-content-around results">
+        <div class="item">
+          <p>Additional Revenue Per User</p>
+          <p class="sum">
+            <span>$</span>
+            <span id="annualRevenuePerUser">10</span>
+          </p>
+        </div>
+        <div class="item">
+          <p>Total Annual Revenue</p>
+          <p class="sum">
+            <span>$</span>
+            <span id="totalAnnualRevenues">10,000</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://www.hydrogen.tech/js/vendor/jquery.min.js'></script>
+<script src='https://www.hydrogen.tech/js/vendor/popper.min.js'></script>
+<script src='https://www.hydrogen.tech/js/bootstrap/bootstrap.min.js'></script>
+<script src='https://www.hydrogen.tech/js/main.js'></script>
+<script src='https://www.hydrogen.tech/js/vendor/jquery-minicolors/jquery.minicolors.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-minicolors/2.3.6/jquery.minicolors.min.js'></script><script type="module" src="./script.js"></script>
+
+</body>
+</html>
