@@ -22,7 +22,7 @@
     "imagemin": "^8.0.1",
     "imagemin-cli": "^7.0.0",
     "index": "^0.4.0",
-    "lighthouse": "^11.3.0",
+    "lighthouse": "^11.4.0",
     "morgan": "^1.10.0",
     "webpagetest": "^0.7.1"
   },
