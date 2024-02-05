@@ -9,7 +9,7 @@
     "start": "npm run install-http-server && npm run start-http-server"
   },
   "dependencies": {
-    "@babel/eslint-parser": "^7.23.3",
+    "@babel/eslint-parser": "^7.23.10",
     "babel": "^6.23.0",
     "babel-cli": "^6.26.0",
     "babel-core": "6.26.3",
